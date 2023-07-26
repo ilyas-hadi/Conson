@@ -3,7 +3,7 @@ export default function Services() {
     <>
       <div className="main_conson y_pad">
         <div className="container">
-          <h1>Company Services</h1>
+          <h1 className="temp-height">Company Services</h1>
         </div>
       </div>
     </>

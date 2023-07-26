@@ -428,15 +428,37 @@ ul.social-links li:hover a i {
 }
 
 .main_conson {
-    /* position: absolute; */
     width: 100%;
-    /* top: 49.19px; */
     z-index: -1;
     background: #030a1e;
     color: #fff;
+    padding-top: 49.19px;
 }
 header {
     position: absolute;
     width: 100%;
     top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* temp css=============================] */
+h1.temp-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

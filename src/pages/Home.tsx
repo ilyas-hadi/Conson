@@ -4,7 +4,7 @@ export default function Home() {
   return (
   <>
   
-    <div className="main_conson ">
+    <div className="main_conson">
       <div className="row g-0 align-items-center">
         <div className="col-md-5">
           <div className="baner-content">

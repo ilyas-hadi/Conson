@@ -4,7 +4,7 @@ export default function About() {
   <>
     <div className="main_conson y_pad">
       <div className="container">
-        <h1>About Us</h1>
+        <h1 className="temp-height">About Us</h1>
       </div>
     </div>
   </>
