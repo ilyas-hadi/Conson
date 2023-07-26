@@ -2,7 +2,7 @@ import {NavLink, Link} from "react-router-dom";
 import {useState} from "react";
 import Headerlogo from '../assets/images/curson_logo.svg';
 import addresholder from '../assets/images/footer_logo.svg';
-
+import Topbar from "./Topbar";
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
     const handleClick = () => { // 👇️ toggle isActive state variable
@@ -10,6 +10,7 @@ export default function Header() {
     };
     return (
         <>
+           <Topbar/>
             <div className="main-header">
                 <div className="container">
                     <div className="navigation_web">
