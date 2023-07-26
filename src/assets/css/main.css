@@ -6,6 +6,18 @@
 body{
     font-family: 'Poppins',sans-serif;
 }
+html, body {
+height: 100%;
+}
+#root {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.main-Footer {
+margin-top: auto;
+}
 ::selection { background: #ff3d00; }
 /* :root{
     
@@ -417,7 +429,7 @@ ul.social-links li:hover a i {
 }
 
 .main_conson {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 49.19px;
     z-index: -1;
