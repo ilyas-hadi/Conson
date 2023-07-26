@@ -431,7 +431,8 @@ ul.social-links li:hover a i {
 .main_conson {
     /* position: absolute; */
     width: 100%;
-    top: 49.19px;
+    /* top: 49.19px; */
     z-index: -1;
     background: #030a1e;
+    color: #fff;
 }
