@@ -1,4 +1,81 @@
-@keyframes rolingtop {
+/* animation demo */
+.animated-demo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.baner-content {
+    position: relative;
+    z-index: 10;
+}
+span.an-1 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff1d00;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    animation: anime1 8s infinite linear;
+}
+span.an-2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ff1d00;
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    animation: anime2 5s infinite linear;
+}
+span.an-3 {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #ff1d00;
+    display: inline-block;
+    animation: anime3 5s infinite linear;
+}
+span.an-4 {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #ff1d00 ;
+    display: inline-block;
+    animation: anime1 4s ease-in-out infinite;
+}
+/* rendom keyframe circles */
+@keyframes anime1 {
+    0%, 200% { transform: translateY(0); }
+    25% { transform: translateY(-50%) scale(1.1); }
+    50% { transform: translateY(-100%) scale(1.2);  }
+    75% { transform: translateY(-150%) scale(1.1);  }
+  }
+  
+@keyframes anime2 {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-50%) scale(1.1);  }
+    50% { transform: translateY(-100%) scale(1.2);  }
+    75% { transform: translateY(-150%) scale(1.1);  }
+}
+@keyframes anime3 {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-50%) scale(1.1); }
+    50% { transform: translateY(-100%) scale(1.2);  }
+    75% { transform: translateY(-150%) scale(1.1);  }
+}
+@keyframes anime4 {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-50%) scale(1.1); opacity: 1; }
+    50% { transform: translateY(-100%) scale(1.2); opacity: 0.7; }
+    75% { transform: translateY(-150%) scale(1.1); opacity: 0.4; }
+}
+/* rendom keyfram color */
+/* @keyframes rolingtop {
 25%{transform: translateX(4px);color: rgb(228, 188, 11);}
 50%{transform: translateX(10px);color: rgb(4, 241, 130);}
 75%{transform: translateX(-10px);color: rgb(61, 43, 226);}
@@ -9,4 +86,11 @@
 50%{transform:scale(0.9);color: rgb(4, 241, 130);}
 100%{transform:scale(1);color: rgb(4, 241, 130);}
 
+} */
+
+.top_social ul li a:hover {
+    background: red;
+}
+.top_social ul li a:hover i {
+    color: #ffffff;
 }

@@ -5,7 +5,7 @@ import addresholder from '../assets/images/footer_logo.svg';
 import Topbar from "./Topbar";
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
-    const handleClick = () => { // 👇️ toggle isActive state variable
+    const handleClick = () => { 
         setIsActive(!isActive);
     };
     return (
@@ -16,8 +16,7 @@ export default function Header() {
                     <div className="navigation_web">
                         {/* logo */}
                         <div className="logo-wb">
-                            <Link to='/'><img src={Headerlogo}
-                                    alt="CursonLogo"/></Link>
+                            <Link to='/'><img src={Headerlogo} alt="CursonLogo"/></Link>
                         </div>
                         {/* navLinks */}
                         <div className="naigation-web-links">
@@ -74,7 +73,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div  className={`adreebar ${isActive ? 'toggle-left' : null}`}>
+                <div  className={`adreebar ${isActive ? 'toggle-left' :''}`}>
                 <div className="sidebar-address">
                     <div className="add-lg-holder">
                         <img src={addresholder}
@@ -134,7 +133,7 @@ export default function Header() {
                         </li>
                     </ul>
                     <div onClick={handleClick}  className="close-btn">
-                        <i className='bx bxl-xing'></i>
+                      <i className='bx bx-x'></i>
                     </div>
                 </div>
             </div>
