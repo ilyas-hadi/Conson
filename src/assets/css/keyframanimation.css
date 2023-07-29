@@ -74,23 +74,44 @@ span.an-4 {
     50% { transform: translateY(-100%) scale(1.2); opacity: 0.7; }
     75% { transform: translateY(-150%) scale(1.1); opacity: 0.4; }
 }
-/* rendom keyfram color */
-/* @keyframes rolingtop {
-25%{transform: translateX(4px);color: rgb(228, 188, 11);}
-50%{transform: translateX(10px);color: rgb(4, 241, 130);}
-75%{transform: translateX(-10px);color: rgb(61, 43, 226);}
-100%{transform: translateX(0);color: rgb(226, 55, 43);}
-}
-@keyframes eyeFiper {
-0%{transform:scale(1);color: rgb(228, 188, 11);}
-50%{transform:scale(0.9);color: rgb(4, 241, 130);}
-100%{transform:scale(1);color: rgb(4, 241, 130);}
-
-} */
-
 .top_social ul li a:hover {
-    background: red;
+    background: #ff3d00;
 }
 .top_social ul li a:hover i {
     color: #ffffff;
+}
+/* percent tage circle */
+
+.circular-chart {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #ffdede;
+  stroke-width: 3.8;
+}
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff3d00;
+}
+
+.percentage {
+  fill: #333333;
+  font-size: 0.8rem;
+  text-anchor: middle;
+  font-weight: 600;
 }
