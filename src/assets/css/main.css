@@ -464,7 +464,7 @@ header {
     z-index: 12;
 }
 /* after before layer stying */
-.main_conson:before {
+.h-consn:before {
     content: "";
     position: absolute;
     top: 49.19px;
@@ -476,7 +476,7 @@ header {
     background-size: contain;
     z-index:10;
 }
-.main_conson:after {
+.h-consn:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -520,7 +520,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 100;
+    z-index: 9;
 }
 .bx-style:after{
     content: "";
@@ -540,6 +540,7 @@ header {
     height: 70px;
     width: 70px;
     transform: translateX(-37px)translateY(-14px);
+    transition: all 0.5s cubic-bezier(1, -0.58, 0, 1.2);
 }
 .ico-sr {
     height: 85px;
@@ -595,7 +596,7 @@ header {
 }
 .main-services {
     transform: translateY(-18px);
-    z-index: 14;
+    z-index: 10;
     position: relative;
 }
 .srv-item h3 {
@@ -683,6 +684,7 @@ span.line-ser:before {
 .rd-more a:hover{
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+    
 .rd-more a:hover i{
     color: #010a1e;
   }
@@ -713,6 +715,10 @@ span.sub-hd:before {
 h2.theme_h {
     font-weight: 700;
     font-size: 2.2rem;
+}
+.cn-h {
+    width: 550px;
+    max-width: 100%;
 }
 /* about consen seciton ++++++++++++======================================= */
 .cn-ab-imgholder {
@@ -759,6 +765,124 @@ ul.list-stl li {
     color: #333333;
     font-weight: 600;
     padding-left:1.2rem;
+}
+
+
+
+
+/* =======================++++ what we do? ++++========================== */
+.main-wd {
+    position: relative;
+}
+.w-do{
+    background-image: url(/src/assets/images/wedo/item_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    top: 0;
+}
+.w-do:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(1 10 30 / 48%);
+    height: 100%;
+    width: 100%;
+}
+.w-do .cn-h {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+/* what do cards */
+.wd-item{
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.wd-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.w-do .srv-item {
+    padding: 1.2rem;
+}
+.w-do .ico-sr {
+    margin: 10px auto;
+}
+.w-do span.line-ser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.w-do .sr-body {
+    text-align: center;
+}
+.w-do .theme_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.w-do .theme_btn a {
+    background: #ffffff;
+    padding: 8px 25px;
+    color: #050a1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-do .theme_btn a:hover{
+    background: #050a1e;
+    color: #ffffff;
+} 
+.w-do .theme_btn a:hover i{
+    color: #ffffff;
+} 
+.w-do .srv-item:hover::before {
+    z-index: -1;
+}
+.w-do .srv-item {
+    z-index: 1;
+}
+.w-do .srv-item:hover span.line-ser {
+   background: #ffffff;
+}
+.w-do .srv-item:hover span.line-ser:before {
+   background: #ffffff;
+}
+.wd-item:hover .ico-sr img {
+    transform: translateX(0px)translateY(0px);
+}
+.wd-item:hover .ico-sr {
+    background: #ffffff;
+}
+.wd-item:hover .sr-body,.wd-item:hover .sr-body > p {
+    color: #ffffff;
+}
+
+.wd-item .srv-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s cubic-bezier(1, -0.58, 0, 1.2);
+}
+.w-do .ico-sr img {
+    height: 60px;
+    width: 60px;
+}
+/* card_images */
+.w-do .srv-item:hover::before {
+    background-image: url(../images/bg-card.png);
 }
 
 /* temp css=============================] */

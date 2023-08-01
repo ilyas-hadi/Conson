@@ -1,19 +1,23 @@
+import {Link} from "react-router-dom";
 import bImage from "../assets/images/financial_Planner.jpg";
 import businesIcon from "../assets/images/services-icon/busines-groth-icon.svg";
 import stratergyIcon from "../assets/images/services-icon/strategy-icon.svg";
 import sutomerIcon from "../assets/images/services-icon/customer_support-icon.svg";
 import stackholder from "../assets/images/stackholder-img.png";
-import CircularChart from "../components/Circularpercent"
+import CircularChart from "../components/Circularpercent";
+import wicon1 from "../assets/images/services-icon/w-icon-1.svg";
+import wicon2 from "../assets/images/services-icon/w-icon-2.svg";
+import wicon3 from "../assets/images/services-icon/w-icon-3.svg";
+import wicon4 from "../assets/images/services-icon/w-icon-4.svg";
 const Home = () => {
     return (
         <>
 
-            <div className="main_conson">
+            <div className="main_conson h-consn">
                 <div className="row g-0 align-items-center ">
                     <div className="col-md-5 xs-dimtion">
                         <div className="baner-content">
                             <h1>The Financial Planning
-                                <span className="sp_style">Guide</span>
                             </h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit dolorem pariatur recusandae sed quas.</p>
                             <div className="theme_btn tbg-white">
@@ -52,9 +56,9 @@ const Home = () => {
                                                 Business Planning
                                             </h2>
                                             <div className="rd-more">
-                                                <a href="javascript:void(0)">
+                                                <Link to='/'>
                                                     <i className='bx bx-plus'></i>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -77,9 +81,9 @@ const Home = () => {
                                                 Strategy Building
                                             </h2>
                                             <div className="rd-more">
-                                                <a href="javascript:void(0)">
+                                                <Link to='/'>
                                                     <i className='bx bx-plus'></i>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +105,7 @@ const Home = () => {
                                                 <span>Support</span>
                                                 Customer Support</h2>
                                             <div className="rd-more">
-                                                <a href="javascript:void(0)">
+                                                <a href="#">
                                                     <i className='bx bx-plus'></i>
                                                 </a>
                                             </div>
@@ -156,7 +160,11 @@ const Home = () => {
                                                         <CircularChart percentage={70}
                                                             color="orange"/>
                                                     </div>
-                                                    <div className="clt"><p>Clients <br /> Satisfactions</p></div>
+                                                    <div className="clt">
+                                                        <p>Clients
+                                                            <br/>
+                                                            Satisfactions</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-6 col-md-6">
@@ -165,15 +173,107 @@ const Home = () => {
                                                         <CircularChart percentage={80}
                                                             color="orange"/>
                                                     </div>
-                                                    <div className="clt"><p>Finance <br /> Satisfactions</p></div>
+                                                    <div className="clt">
+                                                        <p>Finance
+                                                            <br/>
+                                                            Satisfactions</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     {/* themebtn */}
-                                    <div className="theme_btn mt-4"><a href="#"><i className="bx bx-cog"></i> More About</a></div>
+                                    <div className="theme_btn mt-4">
+                                        <a href="#">
+                                            <i className="bx bx-cog"></i>
+                                            More About</a>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/*================================ What we Do? section ============================ */}
+            <section className="y_pad w-do">
+                <div className="container">
+                    <div className="main-wd">
+                        <div className="cn-h">
+                            <h2 className="theme_h">
+                                <span className="sub-hd">What we Do</span>
+                                We Run All Kinds of Services From
+                                <span className="sp_style">
+                                    Technologies</span>
+                            </h2>
+                        </div>
+                        <div className="row justify-content-center y_pad">
+                            {/* card-1 */}
+                            <div className="col-md-6 col-lg-3 mb-md-4">
+                                <div className="wd-item">
+                                    {/* card icon */}
+                                    <div className="srv-item wd-1">
+                                        <div className="sr-body">
+                                            <div className="ico-sr"><img src={wicon1}
+                                                    alt="Business Suport"/></div>
+                                            <h3>Business Planning</h3>
+                                            <span className="line-ser"></span>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa ut veniam et provident aliquam?</p>
+                                            <div className="theme_btn "><a href="#">Read More <i className='bx bx-plus'></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card-2 */}
+                            <div className="col-md-6 col-lg-3 mb-md-4">
+                                <div className="wd-item">
+                                    {/* card icon */}
+                                    <div className="srv-item wd-2">
+                                        <div className="sr-body">
+                                            <div className="ico-sr"><img src={wicon2}
+                                                    alt="Business Suport"/></div>
+                                            <h3>Business Planning</h3>
+                                            <span className="line-ser"></span>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa ut veniam et provident aliquam?</p>
+                                            <div className="theme_btn "><a href="#">Read More <i className='bx bx-plus'></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card-3 */}
+                            <div className="col-md-6 col-lg-3 mb-md-4">
+                                <div className="wd-item">
+                                    {/* card icon */}
+                                    <div className="srv-item wd-3">
+                                        <div className="sr-body">
+                                            <div className="ico-sr"><img src={wicon3}
+                                                    alt="Business Suport"/></div>
+                                            <h3>Business Planning</h3>
+                                            <span className="line-ser"></span>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa ut veniam et provident aliquam?</p>
+                                            <div className="theme_btn "><a href="#">Read More <i className='bx bx-plus'></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card-4 */}
+                            <div className="col-md-6 col-lg-3 ">
+                                <div className="wd-item">
+                                    {/* card icon */}
+                                    <div className="srv-item wd-4">
+                                        <div className="sr-body">
+                                            <div className="ico-sr"><img src={wicon4}
+                                                    alt="Business Suport"/></div>
+                                            <h3>Business Planning</h3>
+                                            <span className="line-ser"></span>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa ut veniam et provident aliquam?</p>
+                                            <div className="theme_btn "><a href="#">Read More <i className='bx bx-plus'></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="find-slu">
+                            d
                         </div>
                     </div>
                 </div>
