@@ -73,7 +73,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div  className={`adreebar ${isActive ? 'toggle-left' :''}`}>
+                <div  className={`adreebar ${isActive ? 'bounceInRight toggle-left' :''}`}>
                 <div className="sidebar-address">
                     <div className="add-lg-holder">
                         <img src={addresholder}
@@ -136,7 +136,9 @@ export default function Header() {
                       <i className='bx bx-x'></i>
                     </div>
                 </div>
-            </div>
+                </div>
+                {/* dropshadow */}
+                <div onClick={handleClick} className={`dropShadow ${isActive ? 'bounceInLeft toggle-left' :''}`}></div>
             </div>
             {/* address bar */}
             
